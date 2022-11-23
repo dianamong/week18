@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котоляндия</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1818/1818401.png" type="image/png">
+</head>
+
+<body>
+    <h1>Опрос</h1>
+    <form>
+        <div><label for="name1">Ваше имя</label>
+            <input type="text" id="name1" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required/>*
+        </div>
+
+        <div><label for="phone">Номер телефона</label>
+            <input type="text" id="phone" minlength="10" maxlength="20"/>
+        </div>
+        <fieldset>
+            <legend><b>Расскажите про вашего питомца</b></legend>
+            <div>
+                <label for="name2">Кличка питомца</label>
+                <input type="text" id="name2" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required/>*
+            </div>
+            <div>
+                <span>Порода питомца</span>
+                <select>
+                    <option value="1">Персидская кошка</option>
+                    <option value="2">Мейн-кун</option>
+                    <option value="3">Британская кошка</option>
+                    <option value="4">Сиамская кошка</option>
+                    <option value="5">Сфинкс</option>
+                    <option value="6">Шотландская вислоухая</option>
+                    <option value="7">Другая, напишу в комментарии</option>
+                </select>
+            </div>
+            <div>
+                <span>Чем питается ваш питомец?</span><br />
+                <input type="checkbox" name="Сухой корм"/>Сухой корм<br />
+                <input type="checkbox" name="Влажный корм"/>Влажный корм<br />
+                <input type="checkbox" name="Натуральный корм" />Натуральный корм
+            </div>
+            <div><label for="sex">Укажите пол питомца*</label><br />
+                <input type="radio" name="sex" id="sex" required/> Самец<br />
+                <input type="radio" name="sex" /> Самка
+            </div>
+            <div><label for="name1">Вы можете приложить фото питомца</label>
+                <input type="file" />
+            </div>
+        </fieldset>
+        <div><textarea rows="5" cols="50" placeholder="Написать комментарий"></textarea></div>
+        <div><button>Сохранить</button></div>
+    </form>
+
+</body>
+
+</html>

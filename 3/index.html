@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body class="body">
+    <form class="form">
+        <div class="row">
+            <label for="userName" class="label">Your name</label>
+            <input type="text" id="userName" class="input" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" placeholder="Name" />
+        </div>
+        <div class="row">
+            <label for="avatar" class="label">Your avatar</label>
+            <input type="text" id="avatar" class="input" placeholder="URL">
+        </div>
+        <div class="row">
+            <label for="comment" class="label">Comment</label>
+            <!--<input type="text" id="comment" placeholder="Text here...">-->
+            <textarea name="comment" id="comment" placeholder="Text here..." cols="30" rows="10"></textarea>
+        </div>
+        <div class="buttons-row">
+            <button type="button" class="btn" onclick="sendComment()">Send</button>
+            <button type="button" class="btn" onclick="clearFields()">Clear fields</button>
+        </div>
+    </form>
+    <div id="container" class="container"></div>
+
+    <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>

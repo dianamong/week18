@@ -1,0 +1,57 @@
+.body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: lavender;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.btn {
+  width: 200px;
+  align-self: center;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  background: rgb(128, 86, 125);
+  color: white;
+  border: none;
+  padding: 1rem 1.6rem;
+  border-radius: 0.4rem;
+  margin-left: 2rem;
+}
+.label {
+  color: rgb(54, 38, 53);
+  font-size: 1.4em;
+}
+#userName,
+#avatar,
+#comment {
+  width: 70%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: rgb(110, 76, 108);
+  border-radius: 0.4rem;
+  border: 1px solid rgb(110, 76, 108);
+  margin-bottom: 1.5rem;
+  padding-left: 15px;
+}
+.container {
+  width: 40%;
+  margin: 0 auto;
+}
+.buttons-row {
+  display: flex;
+  justify-content: center;
+}
+.userName,
+.comment {
+  color: rgb(110, 76, 108);
+  font-size: 1.2em;
+}
